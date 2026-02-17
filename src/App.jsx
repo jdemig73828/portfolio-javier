@@ -29,6 +29,7 @@ import {
   Component, 
   ExternalLink 
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 // --- DATA: EXPERIENCIA ---
 const EXPERIENCE = [
@@ -584,6 +585,7 @@ export default function App() {
         .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(37, 99, 235, 0.4); }
         .scrollbar-hide::-webkit-scrollbar { display: none; }
       `}</style>
+      <Analytics />
     </div>
   );
 }
